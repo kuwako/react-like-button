@@ -5,8 +5,8 @@ module.exports = {
         filename: "like-button.js"
     },
     module: {
-                loaders: [
-                {test: /\.js$/, loader: "babel-loader?stage=0"}
-                ]
-            }
+        loaders: [
+            {test: /\.js$/, loader: "babel", query: {presets: ["es2015", "stage-0"]}}
+        ]
+    }
 };
